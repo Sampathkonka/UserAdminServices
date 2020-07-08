@@ -22,7 +22,6 @@ public class OktaConnectionObject {
 			    .setOrgUrl(oktaURL)  // e.g https://dev-123456.okta.com
 			    .setClientCredentials(new TokenClientCredentials(token))
 			    .build();
-		System.out.println("Okta Client = " + client.toString());
 		return client;
     }
 

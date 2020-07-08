@@ -20,7 +20,7 @@ public class ReadOktaDataService {
 		List<String> users = new ArrayList<String>();
 		UserList oktaUsers = client.listUsers();
 		oktaUsers.forEach(user -> {
-			System.out.println(user.toString());
+			//System.out.println(user.toString());
 			users.add(user.getProfile().getFirstName() + " " + user.getProfile().getLastName());
 		});
 		return users;		
@@ -30,7 +30,7 @@ public class ReadOktaDataService {
 		List<String> applications = new ArrayList<String>();
 		ApplicationList oktaApplications = client.listApplications();
 		oktaApplications.forEach(oktaApplication -> {
-			System.out.println(oktaApplication.toString());
+			//System.out.println(oktaApplication.toString());
 			applications.add(oktaApplication.getLabel());
 		});
 		return applications;
